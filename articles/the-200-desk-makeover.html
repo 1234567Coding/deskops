@@ -8,6 +8,7 @@
   <meta property="og:title" content="The $200 Desk Makeover: Maximum Impact, Minimum Spend">
   <meta property="og:description" content="The budget counterpart to our $1,500 flagship: five $40-or-less swaps ranked by impact-per-dollar, what NOT to buy, and when to save up instead.">
   <meta property="og:type" content="article">
+  <script>(function(){try{var t=localStorage.getItem("deskops-theme")||(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
   <link rel="stylesheet" href="../styles.css">
   <!-- MEDIVAVINE/JOURNEY: paste ad network script here -->
 </head>
@@ -18,11 +19,13 @@
         <span class="brand-mark">D</span>
         <span><span class="brand-name">DeskOps</span><span class="brand-tag">Work from home, done right.</span></span>
       </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" aria-pressed="false"><span class="icon-moon" aria-hidden="true">&#9789;</span><span class="icon-sun" aria-hidden="true">&#9728;</span></button>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav" onclick="var n=document.getElementById('mainNav');this.setAttribute('aria-expanded',n.classList.toggle('open'))">&#9776;</button>
       <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../disclosure.html">Disclosure</a></li>
+        <li class="nav-search"><form class="site-search" role="search" aria-label="Site search"><input type="search" placeholder="Search guides&hellip;" aria-label="Search articles"><ul class="search-results" hidden></ul></form></li>
         </ul>
       </nav>
     </div>
@@ -118,5 +121,6 @@
       <p class="copyright">&copy; 2026 DeskOps. Ergonomic gear, honest reviews, and workflows that make working from home actually work.</p>
     </div>
   </footer>
+  <script src="../assets/site.js" defer></script>
 </body>
 </html>
