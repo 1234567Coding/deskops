@@ -18,7 +18,7 @@
         <span class="brand-mark">D</span>
         <span><span class="brand-name">DeskOps</span><span class="brand-tag">Work from home, done right.</span></span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav" onclick="var n=document.getElementById('mainNav');this.setAttribute('aria-expanded',n.classList.toggle('open'))">&#9776;</button>
       <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -55,43 +55,49 @@
         <h2 class="section-title">All guides &amp; reviews</h2>
         <div class="card-grid">
           <article class="card">
-            <div class="card-art variant-1"><span>Gear showdown</span></div>
+            <div class="card-art variant-1" aria-hidden="true"><span>Gear showdown</span></div>
             <p class="pillar">Ergonomic Gear</p>
             <h3><a href="articles/herman-miller-vs-steelcase-vs-branch.html">Herman Miller vs. Steelcase vs. Branch: Which Office Chair Is Worth It?</a></h3>
             <p class="excerpt">Aeron vs. Leap vs. Branch Ergonomic Chair, tested head-to-head: new-vs-used pricing, cost-per-year math, and exactly who should buy which.</p>
             <a class="read-more" href="articles/herman-miller-vs-steelcase-vs-branch.html">Read more &rarr;</a>
           </article>
           <article class="card">
+            <div class="card-art variant-2" aria-hidden="true"><span>Flagship guide</span></div>
             <p class="pillar">Ergonomic Gear</p>
             <h3><a href="articles/the-1500-ergonomic-home-office.html">The $1,500 Ergonomic Home Office: A Complete Setup Guide</a></h3>
             <p>The full budget breakdown, splurge-vs-save verdicts, and ergonomic measurements for a pain-free home office.</p>
             <a class="read-more" href="articles/the-1500-ergonomic-home-office.html">Read more &rarr;</a>
           </article>
           <article class="card">
+            <div class="card-art variant-3" aria-hidden="true"><span>Tested picks</span></div>
             <p class="pillar">Ergonomic Gear</p>
             <h3><a href="articles/best-ergonomic-office-chairs-remote-workers.html">Best Ergonomic Office Chairs for Remote Workers (2026)</a></h3>
             <p>Six chairs tested 40+ hours each, ranked best overall, budget, back pain, tall, and splurge — by body type.</p>
             <a class="read-more" href="articles/best-ergonomic-office-chairs-remote-workers.html">Read more &rarr;</a>
           </article>
           <article class="card">
+            <div class="card-art variant-4" aria-hidden="true"><span>Software face-off</span></div>
             <p class="pillar">Productivity Software</p>
             <h3><a href="articles/notion-vs-obsidian-vs-capacities.html">Notion vs. Obsidian vs. Capacities: Best Note-Taking App for Remote Workers</a></h3>
             <p>Three apps, three real workflows tested — one winner per workflow, honest pricing, and a decision guide.</p>
             <a class="read-more" href="articles/notion-vs-obsidian-vs-capacities.html">Read more &rarr;</a>
           </article>
           <article class="card">
+            <div class="card-art variant-5" aria-hidden="true"><span>Weekend project</span></div>
             <p class="pillar">Workspace Design</p>
             <h3><a href="articles/ultimate-cable-management-guide.html">The Ultimate Cable Management Guide: From Rat's Nest to Invisible in a Weekend</a></h3>
             <p>A $35 kit, 5 steps, one Saturday morning — with separate tracks for fixed and standing desks.</p>
             <a class="read-more" href="articles/ultimate-cable-management-guide.html">Read more &rarr;</a>
           </article>
           <article class="card">
+            <div class="card-art variant-6" aria-hidden="true"><span>AI tools</span></div>
             <p class="pillar">Productivity Software</p>
             <h3><a href="articles/best-ai-meeting-transcription-tools.html">Best AI Meeting Transcription Tools: Otter vs. Fireflies vs. Fathom</a></h3>
             <p>Same 45-minute meeting through all three tools: accuracy shootout, pricing cutoffs, and privacy notes.</p>
             <a class="read-more" href="articles/best-ai-meeting-transcription-tools.html">Read more &rarr;</a>
           </article>
           <article class="card">
+            <div class="card-art variant-7" aria-hidden="true"><span>Budget upgrade</span></div>
             <p class="pillar">Ergonomic Gear</p>
             <h3><a href="articles/the-200-desk-makeover.html">The $200 Desk Makeover: Maximum Impact, Minimum Spend</a></h3>
             <p>Five sub-$70 upgrades ranked by impact-per-dollar, what not to buy, and when to save for the full build.</p>
