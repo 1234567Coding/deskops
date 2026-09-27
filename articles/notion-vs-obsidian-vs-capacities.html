@@ -18,7 +18,7 @@
         <span class="brand-mark">D</span>
         <span><span class="brand-name">DeskOps</span><span class="brand-tag">Work from home, done right.</span></span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav" onclick="var n=document.getElementById('mainNav');this.setAttribute('aria-expanded',n.classList.toggle('open'))">&#9776;</button>
       <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <ul>
           <li><a href="../index.html">Home</a></li>
